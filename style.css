@@ -1,0 +1,141 @@
+*,
+::before,
+::after {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  font-size: 1rem;
+  font-family: "Red Hat Display", sans-serif;
+  background-image: url("./images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 700%;
+}
+
+.container {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.component {
+  margin: 0 4rem;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.component .title {
+  margin: 1rem 2rem;
+}
+
+.component p.desc {
+  font-family: inherit;
+  font-weight: 500;
+  margin: 1rem 2rem;
+}
+
+img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.plan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  border-radius: 20px;
+  margin: 2rem 2rem;
+  background-color: #f5f7ff;
+}
+
+.plan img {
+  width: 2.8rem;
+  margin: 0 1rem;
+}
+
+.plan .plan-details {
+  margin: 0 1rem 0 0;
+}
+
+.plan p.change {
+  text-decoration: underline;
+  font-size: 16px;
+  color: plum;
+  margin: 0 1rem;
+}
+
+.plan p.change:hover {
+  text-decoration: none;
+}
+
+button {
+  width: 80%;
+  background-color: #3829e0;
+  border: none;
+  border-radius: 5px;
+  margin: 0 2rem;
+  cursor: pointer;
+  color: white;
+  -webkit-box-shadow: 0 2px 10px 0 #3829e0;
+          box-shadow: 0 2px 10px 0 #3829e0;
+  font-weight: 700;
+  font-family: inherit;
+  font-size: 1.5rem;
+}
+
+button:hover {
+  background-color: #1f2f56;
+}
+
+p.order-cancel {
+  color: #7280a7;
+  font-family: inherit;
+  font-weight: 700;
+  margin: 2rem;
+}
+
+p.order-cancel:hover {
+  color: #1f2f56;
+}
+
+p {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 376px) {
+  body {
+    background-image: url("./images/pattern-background-desktop.svg");
+  }
+  .component {
+    max-width: 400px;
+    background-position: center bottom;
+  }
+}
+/*# sourceMappingURL=style.css.map */

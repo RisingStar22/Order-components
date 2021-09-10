@@ -1,0 +1,130 @@
+$color-primary: hsl(225, 100%, 94%);
+$color-primary-1: hsl(245, 75%, 52%);
+
+//   Neutral
+$Verypaleblue: hsl(225, 100%, 98%);
+$Desaturatedblue: hsl(224, 23%, 55%);
+$Darkblue: hsl(223, 47%, 23%);
+$fontMedium: 1rem;
+
+*,
+::before,
+::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: inherit;
+  font-size: $fontMedium;
+  font-family: "Red Hat Display", sans-serif;
+  background-image: url("./images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 700%;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+.component {
+  margin: 0 4rem;
+  background-color: white;
+  border-radius: 20px;
+
+  .title {
+    margin: 1rem 2rem;
+  }
+
+  p.desc {
+    font-family: inherit;
+    font-weight: 500;
+    margin: 1rem 2rem;
+  }
+}
+
+img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+  object-fit: cover;
+  height: fit-content;
+}
+
+.plan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 20px;
+  margin: 2rem 2rem;
+  background-color: $Verypaleblue;
+  img {
+    width: 2.8rem;
+    margin: 0 1rem;
+  }
+  .plan-details {
+    margin: 0 1rem 0 0;
+  }
+  p.change {
+    text-decoration: underline;
+    font-size: 16px;
+    color: plum;
+
+    margin: 0 1rem;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+button {
+  width: 80%;
+  background-color: $color-primary-1;
+  border: none;
+  border-radius: 5px;
+  margin: 0 2rem;
+  cursor: pointer;
+  color: white;
+  box-shadow: 0 2px 10px 0 $color-primary-1;
+  font-weight: 700;
+  font-family: inherit;
+  font-size: 1.5rem;
+
+  &:hover {
+    background-color: $Darkblue;
+  }
+}
+
+p.order-cancel {
+  color: $Desaturatedblue;
+  font-family: inherit;
+  font-weight: 700;
+  margin: 2rem;
+
+  &:hover {
+    color: $Darkblue;
+  }
+}
+
+p {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+@media screen and(min-width:376px) {
+  body {
+    background-image: url("./images/pattern-background-desktop.svg");
+  }
+  .component {
+    max-width: 400px;
+    background-position: center bottom;
+  }
+}
